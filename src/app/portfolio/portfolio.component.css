@@ -1,0 +1,34 @@
+.item {
+  cursor: pointer;
+}
+
+.item:hover .layer{
+  opacity: 1;
+}
+
+.layer {
+  inset: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+
+.model {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.model img {
+  width: 600px;
+}
+
+@media (max-width:768px) {
+  .model img {
+    width: 95%;
+  }
+}

@@ -1,0 +1,25 @@
+<section id="portfolio" class="py-4">
+  
+    <app-page-title [pageTitle]="contactTitle" [isDark]="true"></app-page-title>
+
+    <form class="w-50 mx-auto py-5">
+        <div>
+          <label for="userName" class="form-label position-relative" [class.riseUp] = "userNameLabel">userName:</label>
+          <input type="text" class="form-control border-0 border-bottom py-3 position-relative" id="userName" placeholder="userName" (input)="labelToggle($event, 'userName')">
+        </div>
+        <div>
+          <label for="userAge" class="form-label position-relative" [class.riseUp] = "userAgeLabel">userAge:</label>
+          <input type="number" class="form-control border-0 border-bottom py-3 position-relative" id="userAge" placeholder="userAge" (input)="labelToggle($event, 'userAge')">
+        </div>
+        <div>
+            <label for="userEmail" class="form-label position-relative" [class.riseUp] = "userEmailLabel">userEmail:</label>
+            <input type="email" class="form-control border-0 border-bottom py-3 position-relative" id="userEmail" placeholder="userEmail" (input)="labelToggle($event, 'userEmail')">
+          </div>
+          <div>
+            <label for="userPassword" class="form-label position-relative" [class.riseUp] = "userPassLabel">userPassword:</label>
+            <input type="password" class="form-control border-0 border-bottom py-3 position-relative" id="userPassword" placeholder="userPassword" (input)="labelToggle($event, 'userPass')">
+          </div>
+        <button type="submit" class="btn text-white mt-4">Send Message</button>
+      </form>
+
+  </section>

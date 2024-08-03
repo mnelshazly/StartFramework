@@ -1,0 +1,13 @@
+.dark .separator, .dark h2 {
+  color: rgb(44, 62, 80);
+}
+
+.separator .line {
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.dark .separator .line {
+  background-color: rgb(44, 62, 80);
+}

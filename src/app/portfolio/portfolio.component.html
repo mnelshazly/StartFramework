@@ -1,0 +1,25 @@
+<section id="portfolio" class="py-4">
+
+  <app-page-title [pageTitle]="portfolioTitle" [isDark]="true"></app-page-title>
+
+  <div class="container">
+    <div class="row g-4">
+
+      @for(item of items; track $index) {
+        <div class="col-lg-4 col-md-6">
+          <div class="item position-relative" (click)="showModel(item.imgSrc) ">
+            <img [src]="item.imgSrc" [alt]="item.imgAlt" class="w-100 rounded-3" >
+            <div class="layer position-absolute d-flex justify-content-center align-items-center rounded-3">
+              <i class="fa-solid fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+      }
+
+    </div>
+  </div>
+
+  <div (click)=" hideModel()" [class.d-none]="!isModelVisible" class="model d-flex justify-content-center align-items-center bg-primary bg-opacity-25 ">
+    <img [src]="modelImgSrc" (click) = preventClose($event)>
+  </div>
+</section>

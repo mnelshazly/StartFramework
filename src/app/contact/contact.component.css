@@ -1,0 +1,33 @@
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-label {
+  top: 50px;
+  color: #1abc9c;
+  transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+}
+
+.riseUp {
+  top: 0;
+}
+
+  button {
+    background-color: #1abc9c;
+  }
+
+  button:hover{
+    background-color: #1abc9c !important;
+  }
+
+@media (max-width:768px) {
+  form {
+    width: 100% !important; 
+    padding-inline: 10px;
+  }
+
+}
